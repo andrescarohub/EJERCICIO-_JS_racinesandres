@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Morse</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Texto a Código Morse</h1>
+    
+    <!-- Formulario de selección -->
+    <div class="selector">
+      <label for="option">Seleccione una opción:</label>
+      <select id="option">
+        <option value="toMorse">Convertir a Morse</option>
+        <option value="fromMorse">Convertir de Morse</option>
+      </select>
+    </div>
+    
+    <!-- Entrada para Texto o Morse -->
+    <div class="input-container">
+      <textarea id="inputText" placeholder="Ingrese texto o código Morse aquí..." rows="6"></textarea>
+    </div>
+    
+    <!-- Botón para realizar la conversión -->
+    <button id="convertBtn">Convertir</button>
+
+    <!-- Resultado de la conversión -->
+    <div class="result">
+      <h2>Resultado:</h2>
+      <p id="output"></p>
+    </div>
+  </div>
+
+  <script src="./js/diccionario.js"></script>
+</body>
+</html>
